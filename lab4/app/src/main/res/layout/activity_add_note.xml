@@ -1,0 +1,44 @@
+<!-- res/layout/activity_add_note.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/textViewNoteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_note_name" />
+
+    <EditText
+        android:id="@+id/editTextNoteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNoteName"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewNoteContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNoteName"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_note_content" />
+
+    <EditText
+        android:id="@+id/editTextNoteContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewNoteContent"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNoteContent"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_add_note" />
+
+</RelativeLayout>
